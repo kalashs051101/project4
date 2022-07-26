@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main{
+    height: 100vh;
+    background: linear-gradient(#21b3e1, #fff);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #b7e;
+}
+
+nav{
+    width: 80%;
+    height: auto;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.logo{
+    flex-basis: 15%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+
+.nav-link{
+    text-align: center;
+    flex: 1;
+
+}
+
+.nav-link ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 5px;
+    margin: 0 25px;
+    position: relative;
+} 
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-link ul li::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.nav-link ul li:hover:after{
+    background-color: white;
+}
+
+.active::after{
+    background: #fff !important;
+}
+
+.menu-icon{
+    flex-basis: 15%;
+
+}
+
+.menu-icon img{
+    width: 35px;
+
+}
+
+.content{
+    width: 300px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    /* transform: translateY(-50%); */
+    /* text-align: center; */
+    z-index: 2;
+}
+
+.social-icons img{
+    margin: 10px 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.search-box{
+    margin-top: 20px;
+    border: 20px solid blue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0));
+}
+
+.search-box input{
+    width: 100%;
+    padding: 7px 15px;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #b7e7f6;
+
+}
+::placeholder{
+    color: #b7e7f6;
+}
+
+.search-box img{
+    width:  20px;
+    margin: 5pc 10px;
+}
+
+#clouds{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    animation: clouds 5s linear infinite;
+}
+@keyframe clouds{
+    0%{
+        top:-100%;
+    }
+    20%{
+        top:-100%;
+    }
+    80%{
+        top:-100%;
+    }
+    100%{
+        top:-100%;
+    }
+}
+#airplane{
+    width: 200px;
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    z-index: 2;
+    animation: fly 5s linear infinite;
+
+}
+@keyframe fly{
+    0%{
+        left: -250px;
+    }
+    20%{
+        left: 250px;
+    }
+    80%{
+        left: 250px;
+    }
+    100%{
+        left: 110px;
+    }
+}
+
+#hotairballoon{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    bottom:  100px;
+    left :50%;
+    transform:translateX(-50%) ;
+}
+
+.balloon1{
+    width: 150px;
+    opacity: 0.4;
+
+}
+.balloon2{
+    width: 350px;
+    /* opacity: 0.4; */
+
+}
+.balloon3{
+    width: 180px;
+    opacity: 0.5;
+    align-items: flex-end ;
+}
+
+#myimg{
+    width: 5%;
+    height: 70px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
